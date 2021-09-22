@@ -1,0 +1,67 @@
+* {
+    user-select: none;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: rosybrown;
+}
+
+main {
+    width: 90%;
+    height: 20rem;
+
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.heroPix {
+    width: 20rem;
+    height: auto;
+    border: 5px solid tan;
+    margin: 1rem;
+    
+}   
+
+img:hover {
+    opacity: 0.5;
+    -webkit-transition: opacity 1s;
+    transition: opacity 1s;
+}
+
+
+
+.főmenü {
+    font-size: 4rem;
+    font-family: fantasy;
+    color: tan;
+    text-align: center;
+  
+
+        animation-name: floating;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+        margin-top: 100px;
+        margin-bottom: -50px;
+    }
+     
+    @keyframes floating {
+        0% { transform: translate(0,  0px); }
+        50%  { transform: translate(0, 15px); }
+        100%   { transform: translate(0, -0px); }   
+    }
+
+
+.nammo {
+    position: absolute;
+    font-family: fantasy;
+    color: brown;;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

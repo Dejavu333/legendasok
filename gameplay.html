@@ -1,0 +1,69 @@
+<style>
+    * {     
+        cursor: url('cigarette.png'), pointer;
+        touch-action: manipulation;
+        user-select: none;
+        -webkit-touch-callout:none;
+        -webkit-user-select:none;
+        -khtml-user-select:none;
+        -moz-user-select:none;
+        -ms-user-select:none;
+        -webkit-tap-highlight-color:rgba(0,0,0,0);
+    }
+    body {
+        margin: 0;
+    }
+  
+    @media screen and (min-width: 100px) {
+    
+        .scoreboard {
+            position: fixed;
+            text-align: center;
+            color: white;
+            font-size: 4rem;
+            width: 10rem;
+            height: 5rem;
+            background-color: rgba(0, 0, 0, 0.75);
+            border-radius: 20%;
+            border: 10px solid brown;
+        }
+    }  
+    @media screen and (min-width: 1000px) {
+        .scoreboard {
+            position: fixed;
+            text-align: center;
+            font-size: 2rem;
+            color: white;
+            width: 4rem;
+            height: 3rem;
+            background-color: rgba(0, 0, 0, 0.75);
+            border-radius: 20%;
+            border: 4px solid brown;
+        }
+    }
+    .endgame {
+        display: none;
+        position: absolute;
+        height: 50%;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.75);
+    }
+
+    #gameOver {
+        
+        text-align: center;
+        text-decoration: none;
+        color: brown;
+        font-size: 4rem;
+    }
+
+</style>
+
+<div class="endGame"><a id=gameOver href="gameplay.html">Game Over Igaz-e</a></div>
+<div class="scoreboard">0</div>
+
+<canvas></canvas>
+
+<script src="gameplay.js"></script>
